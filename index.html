@@ -51,11 +51,11 @@
                     <p class="text-sm">Incrivelmente saboroso, com ingredientes frescos e combinações perfeitas que fazem cada mordida valer a pena. Uma experiência deliciosa que você vai querer repetir!</p>
 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$28,90</p>
+                        <p class="font-bold text-lg">R$18,90</p>
                         <button 
                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
                         data-name="Lil Burguer"
-                        data-price="28.90"
+                        data-price="18.90"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -337,7 +337,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
-            
+
             <div class="flex gap-2">
                 <img 
                 src="./assets/coca.png" 
@@ -435,7 +435,10 @@
 
     </div>
 
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+    <div 
+        class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        id="cart-modal"
+    >
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
 
@@ -458,8 +461,8 @@
             </div>
 
         </div>
-    </div>
-
+    </div> 
+    
     <footer class="w-full bg-black py-4 fixed bottom-0 z-40 flex items-center justify-center">
         <button 
         class="flex items-center gap-2 text-white font-bold"
@@ -470,6 +473,8 @@
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
