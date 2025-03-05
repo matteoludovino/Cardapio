@@ -133,7 +133,18 @@ checkoutBtn.addEventListener("click", function(){
 
     const isOpen = checkRestaurantOpen();
     if(!isOpen){
-        alert("Restaurante fechado!")
+        Toastify({
+            text: "O restaurante está fechado agora!",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "left",
+            stopOnFocus: true,
+            style: {
+              background: "#ef4444",
+            },
+          }).showToast();
+
         return;
     }
 
